@@ -1,0 +1,22 @@
+::selection {
+  background: #D4AF37;
+  color: #0B1320;
+}
+
+*:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 2px;
+}
+
+body {
+  scrollbar-color: #D4AF37 #0B1320;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0B1320; }
+::-webkit-scrollbar-thumb { background: #1c2b45; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #D4AF37; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
